@@ -5,7 +5,9 @@ Tingrui Feng, Yali Wang, Chuan Fu, Bo Du, and Fulin Luo.
 
 Code for the paper: **MMFormer: Macro-Micro Transformer for Small-Sample Classification of Mars Hyperspectral Image**.
 
-This paper has been accepted for publication in *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*.
+Published in *IEEE Transactions on Geoscience and Remote Sensing (TGRS)*, vol. 64, 2026.
+
+**DOI:** [10.1109/TGRS.2026.3696892](https://doi.org/10.1109/TGRS.2026.3696892)
 
 <div align=center><img src="Overall.png" width="90%" height="90%"></div>
 Fig. 1: The overall architecture of the proposed MMFormer for Mars hyperspectral image classification. MMFormer contains spatial and spectral Macro-Micro Transformer branches, Center Prompt Attention (CPA), and Cross Weighted Fusion (CWF).
@@ -63,8 +65,6 @@ The data files are not included in this repository. After downloading the datase
 | NF | `NiliFossae.mat` | `NiliFossae` | `NiliFossae_gt.mat` | `NiliFossae_gt` | 9 |
 | UP | `Utopia.mat` | `Utopia` | `Utopia_gt.mat` | `Utopia_gt` | 9 |
 
-Large `.mat`, `.npy`, and `.npz` files are excluded by `.gitignore`.
-
 ## Main Arguments
 --
 | Argument | Default | Description |
@@ -84,24 +84,23 @@ Large `.mat`, `.npy`, and `.npz` files are excluded by `.gitignore`.
 --
 If you find this code helpful, please kindly cite:
 
-[1] T. Feng, Y. Wang, C. Fu, B. Du, and F. Luo, "MMFormer: Macro-Micro Transformer for Small-Sample Classification of Mars Hyperspectral Image," in IEEE Transactions on Geoscience and Remote Sensing, 2026.
+[1] T. Feng, Y. Wang, C. Fu, B. Du, and F. Luo, "MMFormer: Macro–Micro Transformer for Small-Sample Classification of Mars Hyperspectral Image," *IEEE Transactions on Geoscience and Remote Sensing*, vol. 64, Art. no. 5516015, pp. 1–15, 2026, doi: [10.1109/TGRS.2026.3696892](https://doi.org/10.1109/TGRS.2026.3696892).
 
 Citation Details
 --
 BibTeX entry:
 
 ```bibtex
-@ARTICLE{TGRS_2026_MMFormer,
+@ARTICLE{11535167,
   author={Feng, Tingrui and Wang, Yali and Fu, Chuan and Du, Bo and Luo, Fulin},
   journal={IEEE Transactions on Geoscience and Remote Sensing},
-  title={MMFormer: Macro-Micro Transformer for Small-Sample Classification of Mars Hyperspectral Image},
+  title={MMFormer: Macro–Micro Transformer for Small-Sample Classification of Mars Hyperspectral Image},
   year={2026},
-  volume={},
+  volume={64},
   number={},
-  pages={1-1},
-  keywords={Mars;Hyperspectral image classification;Transformer;Small-sample learning;Macro-micro attention},
-  doi={to be updated}
-}
+  pages={5516015-5516015},
+  keywords={Modeling;Transformers;Hyperspectral imaging;Mars;Image classification;Labeling;Modules (abstract algebra);Kernel;Pixel;Minerals;Macro–micro attention (MMA);Mars hyperspectral image classification (Mars HSIC);small-sample learning;Transformer},
+  doi={10.1109/TGRS.2026.3696892}}
 ```
 
 ## Licensing
