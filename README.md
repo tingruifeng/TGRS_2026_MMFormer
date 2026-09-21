@@ -15,7 +15,7 @@ Fig. 1: The overall architecture of the proposed MMFormer for Mars hyperspectral
 ## Abstract
 Mars hyperspectral image classification (Mars HSIC) provides invaluable information for accurate mineral identification and Martian geology studies. However, this task remains challenging owing to scarce labeled samples, high spectral similarity, and environmental noise. Capturing both local details and global contexts is crucial for this task, yet convolutional neural networks struggle with global dependencies, while Transformers tend to neglect fine local details and bring unnecessary computational burden. To address this issue, we propose MMFormer, a Macro-Micro Transformer tailored for Mars HSIC. With a dual-branch architecture, our method adopts the macro-kernel perception and micro-kernel modulation strategy to synergize global contexts with local details in both spatial and spectral domains. To mitigate severe background interference, we introduce a Center Prompt Attention (CPA) module that injects a center-focused prompt to adaptively reweight attention toward the central pixel. To integrate distinct feature representations, a Cross Weighted Fusion (CWF) module is constructed to dynamically fuse complementary spatial and spectral information.
 
-## Training and Test Process
+## Training and Evaluation
 1. Prepare the Mars hyperspectral data files as described in the dataset section.
 2. Install the dependencies:
 
@@ -46,7 +46,6 @@ results/<dataset>/MMFormer/
 ```
 
 ## DataSet Download
---
 The experiments use the public HyMars benchmark:
 
 [HyMars: Mars Hyperspectral Image Classification Benchmark Datasets](https://www.scidb.cn/en/detail?dataSetId=4ff0774d45464f239a73f37796f7a786)
@@ -56,7 +55,6 @@ For details about the dataset, please refer to:
 [1] Bobo Xi, Yun Zhang, Jiaojiao Li, et al. HyMars: Mars Hyperspectral Image Classification Benchmark Datasets[DS/OL]. V2. Science Data Bank, 2025[2025-01-20]. https://doi.org/10.57760/sciencedb.19732. DOI:10.57760/sciencedb.19732.
 
 ## DataSet Preparation
---
 The data files are not included in this repository. After downloading the dataset, please place the MATLAB files under `data/` with the following names and keys:
 
 | Dataset | Data file | Data key | Label file | Label key | Classes |
@@ -65,8 +63,7 @@ The data files are not included in this repository. After downloading the datase
 | NF | `NiliFossae.mat` | `NiliFossae` | `NiliFossae_gt.mat` | `NiliFossae_gt` | 9 |
 | UP | `Utopia.mat` | `Utopia` | `Utopia_gt.mat` | `Utopia_gt` | 9 |
 
-## Main Arguments
---
+## Key Arguments
 | Argument | Default | Description |
 | --- | --- | --- |
 | `--dataset` | `HC` | Dataset name: `HC`, `NF`, or `UP` |
@@ -81,14 +78,11 @@ The data files are not included in this repository. After downloading the datase
 | `--device` | `auto` | Device name, such as `cuda:0` or `cpu` |
 
 ## References
---
 If you find this code helpful, please kindly cite:
 
 [1] T. Feng, Y. Wang, C. Fu, B. Du, and F. Luo, "MMFormer: Macro–Micro Transformer for Small-Sample Classification of Mars Hyperspectral Image," *IEEE Transactions on Geoscience and Remote Sensing*, vol. 64, Art. no. 5516015, pp. 1–15, 2026, doi: [10.1109/TGRS.2026.3696892](https://doi.org/10.1109/TGRS.2026.3696892).
 
-Citation Details
---
-BibTeX entry:
+### BibTeX
 
 ```bibtex
 @ARTICLE{11535167,
@@ -103,8 +97,7 @@ BibTeX entry:
   doi={10.1109/TGRS.2026.3696892}}
 ```
 
-## Licensing
---
+## License
 Copyright (C) 2026 Tingrui Feng, Yali Wang, Chuan Fu, Bo Du, and Fulin Luo.
 
-This project is released for academic research use. Please contact the authors if you have questions about reuse or redistribution.
+All rights reserved. This code is provided for academic research and evaluation only. Modification, redistribution, or commercial use requires prior permission from the authors. Please contact the authors to request permission.
